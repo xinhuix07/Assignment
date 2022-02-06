@@ -71,7 +71,7 @@
         <p>
             Password:
             <asp:TextBox ID="tb_pwd" runat="server" onkeyup="javascript:validate()" TextMode="Password"></asp:TextBox>
-        &nbsp;<asp:Label ID="lbl_pwd" runat="server" Text="Label" EnableViewState="false"></asp:Label>
+        &nbsp;<asp:Label ID="lbl_pwd" runat="server" EnableViewState="false"></asp:Label>
         </p>
         <p>
             Date of Birth:

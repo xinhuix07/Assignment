@@ -56,7 +56,7 @@ namespace Assignment
                         else
                         {
                             Label1.Text = "Wrong email or password";
-                            Response.Redirect("Login.aspx");
+                            
                         }
                     }
                 }
@@ -68,6 +68,10 @@ namespace Assignment
 
 
 
+            }
+            else
+            {
+                Label1.Text = "Captcha problem";
             }
         }
 

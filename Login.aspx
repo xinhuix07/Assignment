@@ -21,14 +21,14 @@
             <asp:Button ID="btn_login" runat="server" Text="Login" OnClick="Login"/>
             <br />
             <br />
-            <input type="hidden" id="g-recaptcha-response" name="g-recaptcha-response" data-sitekey="6Le5l18eAAAAAD-HLKDgfrb9UcaOnNUXiEGf7Geh" />
-            <asp:Label ID="Label1" runat="server" Text="error message here" EnableViewState="false"></asp:Label>
+            <input type="hidden" id="g-recaptcha-response" name="g-recaptcha-response" />
+            <asp:Label ID="Label1" runat="server" EnableViewState="false"></asp:Label>
             <br />
         </div>
     </form>
     <script>
         grecaptcha.ready(function () {
-            grecaptcha.execute('6Le5l18eAAAAAD-HLKDgfrb9UcaOnNUXiEGf7Geh', { action: "Login" }).then(functin(token){
+            grecaptcha.execute('6Le5l18eAAAAAD-HLKDgfrb9UcaOnNUXiEGf7Geh', { action: "Login" }).then(function(token){
                 document.getElementById("g-recaptcha-response").value = token;
             });
         });
